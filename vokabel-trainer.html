@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokabeltrainer</title>
+    <link rel="stylesheet" href="stylesvokabel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vokabeltrainer</h1>
+        <div class="input-section">
+            <input type="text" id="vokabel" placeholder="Neue Vokabel">
+            <input type="text" id="bedeutung" placeholder="Bedeutung">
+            <button onclick="addVokabel()">Hinzufügen</button>
+        </div>
+        <div class="vokabel-list">
+            <h2>Vokabelliste</h2>
+            <ul id="vokabeln"></ul>
+        </div>
+        <div class="quiz-section">
+            <h2>Quiz</h2>
+            <button onclick="startQuiz()">Quiz Starten</button>
+            <div id="quiz"></div>
+        </div>
+    </div>
+    <script src="scriptvokabel.js"></script>
+</body>
+</html>
